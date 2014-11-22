@@ -21,3 +21,7 @@ body {
 .summand {
     width: 30px;
 }
+
+.action {
+    padding: 0 5px;
+}
