@@ -100,6 +100,22 @@ $('#calc').on('click', function () {
         parseActions();
         console.log("nums = ", nums);
         console.log("act = ", actions);
+
+        try {
+            var x = (nums['13'] * nums['22'] - nums['23'] * nums['12']) /
+                (nums['11'] * nums['22'] - nums['21'] * nums['12']);
+        } catch (e) {
+            console.log("e = ", e);
+        }
+
+        try {
+            var y = (nums['11'] * nums['23'] - nums['21'] * nums['13']) /
+                (nums['11'] * nums['22'] - nums['21'] * nums['12']);
+        } catch (e) {
+            console.log("e = ", e);
+        }
+        console.log("x = ", x);
+        console.log("y = ", y);
     }
 });
 
